@@ -444,6 +444,48 @@ a:hover { color: var(--accent-strong); }
   font-weight: 700;
 }
 
+/* In-card highlights */
+.card__hl-label {
+  margin: 0.2rem 0 0.6rem;
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--accent);
+}
+/* Geotab mini card-grid */
+.card__highlights {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 0.7rem;
+  margin: 0 0 1.1rem;
+}
+.hl-mini {
+  background: var(--chip-bg);
+  border: 1px solid var(--chip-border);
+  border-left: 3px solid var(--accent);
+  border-radius: 8px;
+  padding: 0.7rem 0.85rem;
+}
+.hl-mini h4 { margin: 0 0 0.25rem; font-size: 0.95rem; color: var(--text); }
+.hl-mini p { margin: 0; font-size: 0.85rem; color: var(--text-muted); line-height: 1.45; }
+/* Highlights list for lighter roles */
+.card__hl-list { list-style: none; margin: 0 0 0.9rem; padding: 0; }
+.card__hl-list li {
+  position: relative;
+  padding-left: 1.15rem;
+  margin-bottom: 0.45rem;
+  color: var(--text-muted);
+  font-size: 0.93rem;
+}
+.card__hl-list li::before {
+  content: "\25B8";
+  position: absolute;
+  left: 0;
+  color: var(--accent);
+}
+.card__hl-list strong { color: var(--text); }
+
 .badge {
   font-size: 0.7rem;
   font-weight: 700;
