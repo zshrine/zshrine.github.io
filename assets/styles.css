@@ -421,29 +421,6 @@ a:hover { color: var(--accent-strong); }
 }
 .card__sub-note { color: var(--text-faint); font-style: normal; }
 
-.card__milestone {
-  display: flex;
-  align-items: flex-start;
-  gap: 0.55rem;
-  margin: 0 0 0.9rem;
-  padding: 0.6rem 0.8rem;
-  background: var(--chip-bg);
-  border: 1px solid var(--chip-border);
-  border-left: 3px solid var(--accent);
-  border-radius: 8px;
-  color: var(--text);
-  font-size: 0.92rem;
-  line-height: 1.5;
-}
-.card__milestone svg { flex: 0 0 auto; color: var(--accent); margin-top: 0.15rem; }
-.card__milestone strong {
-  color: var(--accent);
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  font-size: 0.72rem;
-  font-weight: 700;
-}
-
 /* In-card highlights */
 .card__hl-label {
   margin: 0.2rem 0 0.6rem;
@@ -469,22 +446,6 @@ a:hover { color: var(--accent-strong); }
 }
 .hl-mini h4 { margin: 0 0 0.25rem; font-size: 0.95rem; color: var(--text); }
 .hl-mini p { margin: 0; font-size: 0.85rem; color: var(--text-muted); line-height: 1.45; }
-/* Highlights list for lighter roles */
-.card__hl-list { list-style: none; margin: 0 0 0.9rem; padding: 0; }
-.card__hl-list li {
-  position: relative;
-  padding-left: 1.15rem;
-  margin-bottom: 0.45rem;
-  color: var(--text-muted);
-  font-size: 0.93rem;
-}
-.card__hl-list li::before {
-  content: "\25B8";
-  position: absolute;
-  left: 0;
-  color: var(--accent);
-}
-.card__hl-list strong { color: var(--text); }
 
 .badge {
   font-size: 0.7rem;
@@ -572,41 +533,6 @@ a:hover { color: var(--accent-strong); }
 }
 .chips--interests li { font-size: 0.95rem; padding: 0.4rem 0.8rem; }
 .chips--interests .icon { color: var(--accent); }
-
-/* ---------- Highlights ---------- */
-.highlights {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 1.1rem;
-}
-.highlight {
-  background: var(--bg-elev);
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-  padding: 1.4rem;
-  transition: border-color var(--transition), transform var(--transition);
-}
-.highlight:hover { border-color: var(--accent); transform: translateY(-3px); }
-.highlight__icon {
-  width: 46px;
-  height: 46px;
-  display: grid;
-  place-items: center;
-  border-radius: var(--radius-sm);
-  background: var(--chip-bg);
-  border: 1px solid var(--chip-border);
-  color: var(--accent);
-  margin-bottom: 0.9rem;
-}
-.highlight__title {
-  font-size: 1.05rem;
-  margin: 0 0 0.5rem;
-}
-.highlight p {
-  margin: 0;
-  color: var(--text-muted);
-  font-size: 0.92rem;
-}
 
 /* ---------- Education + Interests ---------- */
 .edu-grid {
@@ -717,7 +643,7 @@ a:hover { color: var(--accent-strong); }
 @media (prefers-reduced-motion: reduce) {
   * { scroll-behavior: auto !important; }
   .reveal { opacity: 1; transform: none; transition: none; }
-  .btn:hover, .highlight:hover, .theme-toggle:hover { transform: none; }
+  .btn:hover, .theme-toggle:hover { transform: none; }
 }
 
 /* ============================================================
@@ -748,27 +674,21 @@ a:hover { color: var(--accent-strong); }
     line-height: 1.4;
   }
   .site-header,
-  .nav__toggle,
-  .theme-toggle,
-  .hero__actions,
-  .skip-link,
-  .reveal { display: initial; }
-  .site-header,
-  .hero__actions,
-  .nav { display: none !important; }
+  .nav,
+  .hero__actions { display: none !important; }
   .reveal { opacity: 1 !important; transform: none !important; }
 
   .hero { padding: 0 0 0.8rem; }
   .section { padding: 0.7rem 0; border-top: 1px solid #ddd; page-break-inside: avoid; }
-  .card, .highlight, .skill-group {
+  .card, .hl-mini, .skill-group {
     box-shadow: none;
     border: 1px solid #ddd;
     page-break-inside: avoid;
   }
-  .card:hover, .highlight:hover { transform: none; }
+  .card:hover { transform: none; }
   .tl-item::before, .tl-marker { display: none; }
   .tl-item { padding-left: 0; margin-bottom: 0.8rem; }
-  .highlights, .skills-grid { gap: 0.6rem; }
+  .card__highlights, .skills-grid { gap: 0.6rem; }
   a { color: #111; text-decoration: none; }
   .site-footer { border-top: 1px solid #ddd; padding: 0.8rem 0; }
 }
