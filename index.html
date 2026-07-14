@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tan Wei Jie — Senior Site Reliability Engineer</title>
+  <meta name="description" content="Tan Wei Jie (WJ) — Senior Site Reliability Engineer in Singapore. 12+ years in IT with deep expertise in Prometheus observability, SLO/CUJ programs, incident management, and reliability engineering at scale." />
+  <meta name="author" content="Tan Wei Jie" />
+  <meta name="theme-color" content="#0d1117" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Tan Wei Jie — Senior Site Reliability Engineer" />
+  <meta property="og:description" content="Senior SRE in Singapore. Prometheus SME, alerting-platform migration lead, SLO/CUJ program builder, and AI-tooling pioneer for reliability engineering." />
+  <meta property="og:locale" content="en_SG" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Tan Wei Jie — Senior Site Reliability Engineer" />
+  <meta name="twitter:description" content="Senior SRE in Singapore. Prometheus SME, alerting-platform migration lead, SLO/CUJ program builder." />
+
+  <!-- Set theme before paint to avoid flash -->
+  <script>
+    (function () {
+      try {
+        var stored = localStorage.getItem('theme');
+        var theme = stored || (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark');
+        document.documentElement.setAttribute('data-theme', theme);
+      } catch (e) {
+        document.documentElement.setAttribute('data-theme', 'dark');
+      }
+    })();
+  </script>
+
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ============ NAV ============ -->
+  <header class="site-header">
+    <nav class="nav" aria-label="Primary">
+      <a class="nav__brand" href="#hero" aria-label="Tan Wei Jie — home">
+        <span class="nav__brand-mark" aria-hidden="true">&gt;_</span>
+        <span class="nav__brand-name">WJ</span>
+      </a>
+
+      <button class="nav__toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Toggle navigation menu">
+        <span class="nav__toggle-bar" aria-hidden="true"></span>
+        <span class="nav__toggle-bar" aria-hidden="true"></span>
+        <span class="nav__toggle-bar" aria-hidden="true"></span>
+      </button>
+
+      <ul class="nav__menu" id="nav-menu">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#highlights">Highlights</a></li>
+        <li><a href="#education">Education</a></li>
+        <li>
+          <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Switch to light theme" title="Toggle light/dark theme">
+            <svg class="icon icon--sun" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false">
+              <circle cx="12" cy="12" r="4.2" fill="currentColor"/>
+              <g stroke="currentColor" stroke-width="1.8" stroke-linecap="round">
+                <line x1="12" y1="2.5" x2="12" y2="5"/>
+                <line x1="12" y1="19" x2="12" y2="21.5"/>
+                <line x1="2.5" y1="12" x2="5" y2="12"/>
+                <line x1="19" y1="12" x2="21.5" y2="12"/>
+                <line x1="5.1" y1="5.1" x2="6.8" y2="6.8"/>
+                <line x1="17.2" y1="17.2" x2="18.9" y2="18.9"/>
+                <line x1="5.1" y1="18.9" x2="6.8" y2="17.2"/>
+                <line x1="17.2" y1="6.8" x2="18.9" y2="5.1"/>
+              </g>
+            </svg>
+            <svg class="icon icon--moon" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false">
+              <path d="M20 14.5A8 8 0 1 1 9.5 4a6.3 6.3 0 0 0 10.5 10.5z" fill="currentColor"/>
+            </svg>
+          </button>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- ============ HERO ============ -->
+    <section id="hero" class="hero" aria-labelledby="hero-name">
+      <div class="container hero__inner">
+        <p class="hero__eyebrow"><span class="prompt" aria-hidden="true">$</span> whoami</p>
+        <h1 id="hero-name" class="hero__name">Tan Wei Jie <span class="hero__nick">(WJ)</span></h1>
+        <p class="hero__title">Senior Site Reliability Engineer</p>
+        <p class="hero__value">
+          I keep complex, cloud-scale systems reliable, observable, and quiet — turning noisy alerts
+          into trustworthy signals, and incidents into fixed root causes.
+        </p>
+        <ul class="hero__meta" aria-label="Quick facts">
+          <li>
+            <svg class="icon" viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6a2.5 2.5 0 0 1 0 5.5z" fill="currentColor"/></svg>
+            Singapore
+          </li>
+          <li>
+            <svg class="icon" viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M12 8v5l3 2M12 3a9 9 0 1 0 0 18 9 9 0 0 0 0-18z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            12+ years in IT
+          </li>
+          <li>
+            <svg class="icon" viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M4 5h16v14H4zM4 9h16M8 5v4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            Prometheus / SRE
+          </li>
+        </ul>
+
+        <div class="hero__actions">
+          <a class="btn btn--primary" href="mailto:tanweijie89@gmail.com">
+            <svg class="icon" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M3 5h18v14H3zM3 6l9 7 9-7" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            Email
+          </a>
+          <a class="btn" href="https://www.linkedin.com/in/tan-wei-jie-26a02167/" target="_blank" rel="noopener">
+            <svg class="icon" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M6.94 8.5H4V20h2.94zM5.47 4a1.7 1.7 0 1 0 0 3.4 1.7 1.7 0 0 0 0-3.4zM20 20h-2.94v-6.1c0-1.6-.6-2.4-1.8-2.4-1 0-1.6.68-1.86 1.34-.1.24-.12.56-.12.9V20H10.3s.04-9.9 0-11.5h2.94v1.63c.39-.6 1.09-1.46 2.66-1.46 1.94 0 3.4 1.27 3.4 4z" fill="currentColor"/></svg>
+            LinkedIn
+          </a>
+          <a class="btn" href="https://github.com/zshrine" target="_blank" rel="noopener">
+            <svg class="icon" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.45-1.16-1.11-1.47-1.11-1.47-.9-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.9 1.52 2.34 1.08 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.02a9.5 9.5 0 0 1 5 0c1.91-1.29 2.75-1.02 2.75-1.02.55 1.38.2 2.4.1 2.65.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.68-4.57 4.93.36.31.68.92.68 1.85v2.74c0 .27.18.58.69.48A10 10 0 0 0 12 2z" fill="currentColor"/></svg>
+            GitHub
+          </a>
+          <a class="btn btn--ghost print-btn" href="#" data-action="print">
+            <svg class="icon" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M6 9V3h12v6M6 18H4v-6h16v6h-2M8 14h8v6H8z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            Save as PDF
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section id="about" class="section reveal" aria-labelledby="about-h">
+      <div class="container">
+        <h2 id="about-h" class="section__title"><span class="section__num">01.</span> About</h2>
+        <div class="about">
+          <p>
+            Seasoned Site Reliability / DevOps Engineer with 12+ years in IT. I have watched the industry
+            evolve from monolithic on-prem deployments to stateless microservices in the cloud, and the
+            shift from licensed software to SaaS — and I have engineered systems across that whole journey.
+          </p>
+          <p>
+            My focus is the reliability, availability, and scalability of complex systems: driving
+            research and proofs-of-concept that improve performance and stability, building robust CI/CD
+            pipelines, and optimizing operational processes. I thrive as a fast learner in dynamic
+            environments, and I care most about turning operational noise into trustworthy signal.
+          </p>
+          <p class="about__direction">
+            <strong>Where I'm heading:</strong> having progressed from SRE to Senior SRE, I'm growing toward
+            a Tech Lead role — leading large-scale technical solutions, expanding SME breadth, deepening
+            automation and toil reduction, and driving Kubernetes-native monitoring as infrastructure moves
+            to next-generation architectures.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ EXPERIENCE ============ -->
+    <section id="experience" class="section reveal" aria-labelledby="exp-h">
+      <div class="container">
+        <h2 id="exp-h" class="section__title"><span class="section__num">02.</span> Experience</h2>
+
+        <ol class="timeline">
+          <!-- Geotab -->
+          <li class="tl-item">
+            <div class="tl-marker" aria-hidden="true"></div>
+            <article class="card">
+              <header class="card__head">
+                <div>
+                  <h3 class="card__role">Senior Site Reliability Engineer <span class="badge">Promoted</span></h3>
+                  <p class="card__org">Geotab · SRE Data Delivery Services · Singapore</p>
+                </div>
+                <p class="card__dates">Dec 2025 – Present</p>
+              </header>
+              <p class="card__sub">Site Reliability Engineer · Nov 2023 – Dec 2025 <span class="card__sub-note">(promoted to Senior SRE)</span></p>
+              <ul class="bullets">
+                <li>Recognized as the <strong>global subject-matter expert for the Prometheus monitoring stack</strong> (Prometheus, Alertmanager, Grafana) on the SRE team.</li>
+                <li><strong>Led the migration of the alerting platform</strong> off a legacy metrics/analytics stack onto Prometheus; authored the migration guide and alarm-creation documentation adopted by the team.</li>
+                <li>Resolved high-impact alerting defects: eliminated duplicate alerts, fixed a bug causing new-server alerts to fire ~4 hours late, and built <strong>provisioning-aware alerts</strong> that correctly handle newly provisioned machines (team kudos).</li>
+                <li>Helped define <strong>Critical User Journeys, SLIs and SLOs</strong>; co-built the main CUJ dashboard and delivered quarterly SLO reviews.</li>
+                <li>Improved problem-management process adherence to <strong>100% in Q3, up from 65%</strong> the prior quarter.</li>
+                <li><strong>Pioneered AI tooling for the SRE team</strong> — built a NotebookLM-based troubleshooting knowledge base and a Gemini-based assistant for weekly handover reports; trained the team and drove AI adoption beyond SRE.</li>
+                <li>Built an <strong>SLA uptime dashboard</strong> (Grafana + Superset + BigQuery), custom alert routes to notify the customer-success team for priority databases, and a maintenance-window view reconciled against Alertmanager silences.</li>
+                <li>Acted as <strong>on-call incident lead</strong> — coordinated cross-team recovery with L3 (dev, DBA, platform) teams and championed customer-impact-first incident response.</li>
+                <li>Secondary SME for registry &amp; reverse-proxy services; drove post-incident monitoring improvements, a deployment-review process, and new registry/login-page alarms.</li>
+                <li>Reduced alert noise and false positives by rewriting alarm rules and standardizing exclusion logic, cutting the number of silences required.</li>
+                <li>Operate and monitor a large-scale platform spanning <strong>multiple deployment architectures</strong> — monolithic, high-availability, and split-application models.</li>
+                <li>Drove <strong>capacity planning and cloud cost management</strong>, right-sizing infrastructure to keep services efficient and sustainable at scale.</li>
+              </ul>
+              <ul class="tags" aria-label="Technologies">
+                <li>Prometheus</li><li>Alertmanager</li><li>Grafana</li><li>GCP</li><li>Kubernetes</li>
+                <li>GitOps</li><li>Terraform</li><li>SLO / CUJ</li><li>Unleash</li>
+              </ul>
+            </article>
+          </li>
+
+          <!-- Merquri -->
+          <li class="tl-item">
+            <div class="tl-marker" aria-hidden="true"></div>
+            <article class="card">
+              <header class="card__head">
+                <div>
+                  <h3 class="card__role">Site Reliability / DevOps Engineer</h3>
+                  <p class="card__org">Merquri Pte Ltd · Singapore</p>
+                </div>
+                <p class="card__dates">Sept 2021 – 2023</p>
+              </header>
+              <ul class="bullets">
+                <li>Owned monitoring and alarming for applications and middleware using Prometheus, Grafana, and CloudWatch; designed a centralized Alertmanager workflow.</li>
+                <li>Built centralized log analytics with Fluent Bit and AWS Elasticsearch/OpenSearch — authoring filters and index-state-management (ISM) policies — and a Lambda for cross-account logging.</li>
+                <li>Stood up a new production AWS account end to end: VPC/CIDR, route tables, VPC peering, EC2 launch templates, EKS, MSK, and Redis.</li>
+                <li>Deployed observability and cluster tooling via Helm (kube-prometheus-stack, cert-manager) across environments; set up APM with Apache SkyWalking.</li>
+                <li>Troubleshot pod/node failures and application-performance irregularities using dashboards and metrics.</li>
+              </ul>
+              <ul class="tags" aria-label="Technologies">
+                <li>AWS</li><li>EKS</li><li>Prometheus</li><li>Grafana</li><li>Fluent Bit</li><li>OpenSearch</li><li>Helm</li><li>SkyWalking</li>
+              </ul>
+            </article>
+          </li>
+
+          <!-- Toppan Ecquaria -->
+          <li class="tl-item">
+            <div class="tl-marker" aria-hidden="true"></div>
+            <article class="card">
+              <header class="card__head">
+                <div>
+                  <h3 class="card__role">Senior Product / DevOps Engineer</h3>
+                  <p class="card__org">Toppan Ecquaria Pte Ltd · Singapore</p>
+                </div>
+                <p class="card__dates">Feb 2018 – Sept 2021</p>
+              </header>
+              <ul class="bullets">
+                <li>Enhanced the core Ecquaria product and supported multiple client projects, researching and adopting new tools into the product framework.</li>
+                <li>Built per-project CI/CD pipelines (Jenkins, SonarQube, Nexus Repository) and deployed microservices on Docker Swarm.</li>
+                <li>Deployed Tyk API gateway in HA clustering; built SSO with SAML/OIDC using ADFS and Azure AD as identity providers.</li>
+                <li>Hardened Docker to CIS benchmarks and ran security testing with OWASP ZAP (DAST) and IBM AppScan; managed dependency scanning with Dependency-Track.</li>
+                <li>Ran load testing (JMeter), automated testing (Katalon, Selenium Grid), and maintained custom Docker images (ELK, Glowroot).</li>
+                <li>Led an overseas client-training programme in Brunei and served as an internal product-training speaker.</li>
+              </ul>
+              <ul class="tags" aria-label="Technologies">
+                <li>Docker Swarm</li><li>Jenkins</li><li>SonarQube</li><li>Nexus</li><li>Tyk</li><li>SAML / OIDC</li><li>ELK</li><li>JMeter</li>
+              </ul>
+            </article>
+          </li>
+
+          <!-- NCS condensed -->
+          <li class="tl-item">
+            <div class="tl-marker" aria-hidden="true"></div>
+            <article class="card">
+              <header class="card__head">
+                <div>
+                  <h3 class="card__role">Consultant → Senior Consultant</h3>
+                  <p class="card__org">NCS Pte Ltd · Singapore</p>
+                </div>
+                <p class="card__dates">2011 – Feb 2018</p>
+              </header>
+              <p class="card__sub">Progressed Associate Consultant → Consultant → Senior Consultant</p>
+              <ul class="bullets">
+                <li>Team lead for the ICA technical-refresh programme (web + batch apps): upgraded WebLogic 8→10 and JDK 1.4→1.6, refreshed RSA servers, and migrated version control from Borland StarTeam to GitLab.</li>
+                <li>Lead developer for the SG50 birth-registration and birth-certificate implementation.</li>
+                <li>Led teams of 3–4 developers — managing scope, effort/budget estimation, and delivery timelines — and supported users through major incidents.</li>
+                <li>Delivered system enhancements and bug fixes, daily batch-job monitoring and recovery, data patching, and user support.</li>
+              </ul>
+              <ul class="tags" aria-label="Technologies">
+                <li>Java / J2EE</li><li>WebLogic</li><li>Oracle PL/SQL</li><li>GitLab</li><li>Team lead</li>
+              </ul>
+            </article>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ SKILLS ============ -->
+    <section id="skills" class="section reveal" aria-labelledby="skills-h">
+      <div class="container">
+        <h2 id="skills-h" class="section__title"><span class="section__num">03.</span> Skills</h2>
+        <div class="skills-grid">
+          <article class="skill-group">
+            <h3 class="skill-group__title">Observability &amp; Monitoring</h3>
+            <ul class="chips">
+              <li>Prometheus <span class="chip-note">SME</span></li><li>Alertmanager</li><li>Grafana</li>
+              <li>PromQL</li><li>Blackbox exporter</li><li>node_exporter</li><li>cAdvisor</li>
+              <li>Elastic Stack / APM</li><li>Apache SkyWalking</li><li>Glowroot</li>
+              <li>Fluent Bit</li><li>AWS CloudWatch</li><li>Superset</li><li>BigQuery</li>
+            </ul>
+          </article>
+
+          <article class="skill-group">
+            <h3 class="skill-group__title">Cloud &amp; Infrastructure</h3>
+            <ul class="chips">
+              <li>GCP</li><li>AWS</li><li>EKS</li><li>OpenSearch</li><li>ElastiCache</li>
+              <li>Lambda</li><li>MSK</li><li>VPC / Networking</li><li>Kubernetes</li>
+              <li>Helm</li><li>Docker</li><li>Docker Swarm</li><li>Terraform <span class="chip-note">working</span></li><li>Pulumi</li>
+            </ul>
+          </article>
+
+          <article class="skill-group">
+            <h3 class="skill-group__title">SRE / Reliability Practice</h3>
+            <ul class="chips">
+              <li>Incident management</li><li>On-call leadership</li><li>Problem management</li>
+              <li>SLO / SLI / SLA</li><li>CUJ design</li><li>Capacity planning</li>
+              <li>Cost management</li><li>GitOps + rollbacks</li><li>Unleash feature flags</li>
+              <li>Toil reduction</li><li>Root-cause analysis</li>
+            </ul>
+          </article>
+
+          <article class="skill-group">
+            <h3 class="skill-group__title">CI/CD &amp; Quality</h3>
+            <ul class="chips">
+              <li>Jenkins</li><li>GitLab CI</li><li>SonarQube</li><li>Nexus Repository</li>
+              <li>OWASP Dependency-Check/Track</li><li>CoreOS Clair</li><li>OWASP ZAP</li>
+              <li>IBM AppScan</li><li>Selenium Grid</li><li>Katalon</li><li>JMeter</li>
+            </ul>
+          </article>
+
+          <article class="skill-group">
+            <h3 class="skill-group__title">Programming &amp; Data</h3>
+            <ul class="chips">
+              <li>Java / J2EE</li><li>JavaScript</li><li>Groovy</li><li>Bash</li>
+              <li>Python <span class="chip-note">working</span></li><li>Oracle PL/SQL</li>
+              <li>MySQL</li><li>MongoDB</li><li>Redis</li><li>Kafka</li>
+            </ul>
+          </article>
+
+          <article class="skill-group">
+            <h3 class="skill-group__title">Security &amp; Identity</h3>
+            <ul class="chips">
+              <li>SSO — SAML &amp; OIDC</li><li>ADFS</li><li>Azure AD</li>
+              <li>HashiCorp Vault <span class="chip-note">novice</span></li>
+              <li>CyberArk Conjur <span class="chip-note">novice</span></li>
+            </ul>
+          </article>
+
+          <article class="skill-group">
+            <h3 class="skill-group__title">AI / Tooling</h3>
+            <ul class="chips">
+              <li>NotebookLM</li><li>Gemini</li><li>Prompt engineering</li>
+              <li>AI-assisted troubleshooting</li><li>Handover automation</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ HIGHLIGHTS ============ -->
+    <section id="highlights" class="section reveal" aria-labelledby="hl-h">
+      <div class="container">
+        <h2 id="hl-h" class="section__title"><span class="section__num">04.</span> Key Achievements</h2>
+        <div class="highlights">
+          <article class="highlight">
+            <div class="highlight__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="24" height="24"><path d="M3 3v18h18M7 15l4-5 3 3 5-7" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <h3 class="highlight__title">Prometheus Global SME</h3>
+            <p>Became the recognized subject-matter expert for the Prometheus, Alertmanager, and Grafana stack across the global SRE team.</p>
+          </article>
+
+          <article class="highlight">
+            <div class="highlight__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="24" height="24"><path d="M4 7h11M4 12h16M4 17h9M17 5l3 2-3 2M20 15l-3 2 3 2" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <h3 class="highlight__title">Alerting-Platform Migration</h3>
+            <p>Led the move from a legacy metrics/analytics alerting stack to Prometheus, and authored the migration and alarm-creation guides used team-wide.</p>
+          </article>
+
+          <article class="highlight">
+            <div class="highlight__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="24" height="24"><path d="M12 3l2.5 5 5.5.8-4 3.9.9 5.5L12 15.5 7.1 18l.9-5.5-4-3.9L9.5 8z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <h3 class="highlight__title">AI-Tooling Pioneer</h3>
+            <p>Built a NotebookLM troubleshooting knowledge base and a Gemini handover-report assistant, trained the team, and drove AI adoption beyond SRE.</p>
+          </article>
+
+          <article class="highlight">
+            <div class="highlight__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="24" height="24"><path d="M12 3a9 9 0 1 0 9 9M12 7v5l3 2M21 5l-3 3-2-2" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <h3 class="highlight__title">CUJ / SLO Program</h3>
+            <p>Helped define Critical User Journeys, SLIs and SLOs, co-built the main CUJ dashboard, and delivered quarterly SLO reviews.</p>
+          </article>
+
+          <article class="highlight">
+            <div class="highlight__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="24" height="24"><path d="M9 12l2 2 4-4M12 3l7 3v6c0 4-3 7-7 9-4-2-7-5-7-9V6z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <h3 class="highlight__title">Alerting-Defect Fixes</h3>
+            <p>Eliminated duplicate alerts, fixed ~4-hour-late new-server alerts, and shipped provisioning-aware alerting that handles freshly provisioned machines.</p>
+          </article>
+
+          <article class="highlight">
+            <div class="highlight__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="24" height="24"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <h3 class="highlight__title">100% Process Adherence</h3>
+            <p>Raised problem-management process adherence to 100% in Q3, up from 65% the prior quarter, while cutting alert noise and required silences.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ EDUCATION + INTERESTS ============ -->
+    <section id="education" class="section reveal" aria-labelledby="edu-h">
+      <div class="container">
+        <h2 id="edu-h" class="section__title"><span class="section__num">05.</span> Education &amp; Interests</h2>
+        <div class="edu-grid">
+          <div class="edu-col">
+            <h3 class="edu-col__title">Education</h3>
+            <ul class="edu-list">
+              <li>
+                <span class="edu-list__school">Murdoch University</span>
+                <span class="edu-list__detail">Degree in IT Management</span>
+                <span class="edu-list__year">2012 – 2013</span>
+              </li>
+              <li>
+                <span class="edu-list__school">Singapore Polytechnic</span>
+                <span class="edu-list__detail">Diploma in Information Technology</span>
+                <span class="edu-list__year">2006 – 2009</span>
+              </li>
+              <li>
+                <span class="edu-list__school">Deyi Secondary School</span>
+                <span class="edu-list__detail">GCE O Level</span>
+                <span class="edu-list__year">2002 – 2005</span>
+              </li>
+            </ul>
+          </div>
+          <div class="edu-col">
+            <h3 class="edu-col__title">Interests</h3>
+            <ul class="chips chips--interests">
+              <li>
+                <svg class="icon" viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M8 21l3-9m0 0l2-6 4 4-3 2m-3 0l-3-1-3 3" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                Rock climbing
+              </li>
+              <li>
+                <svg class="icon" viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M4 18c2 0 2-1.5 4-1.5S10 18 12 18s2-1.5 4-1.5S18 18 20 18M12 3v9m0 0l3-3m-3 3L9 9" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                Diving
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="container site-footer__inner">
+      <p class="site-footer__name"><span class="prompt" aria-hidden="true">&gt;_</span> Tan Wei Jie — Senior Site Reliability Engineer</p>
+      <ul class="site-footer__links">
+        <li><a href="mailto:tanweijie89@gmail.com">Email</a></li>
+        <li><a href="https://www.linkedin.com/in/tan-wei-jie-26a02167/" target="_blank" rel="noopener">LinkedIn</a></li>
+        <li><a href="https://github.com/zshrine" target="_blank" rel="noopener">GitHub</a></li>
+      </ul>
+      <p class="site-footer__note">Built as a dependency-free static site · Singapore</p>
+    </div>
+  </footer>
+
+  <script src="assets/main.js" defer></script>
+</body>
+</html>
