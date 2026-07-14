@@ -54,8 +54,8 @@
       <ul class="nav__menu" id="nav-menu">
         <li><a href="#about">About</a></li>
         <li><a href="#experience">Experience</a></li>
-        <li><a href="#skills">Skills</a></li>
         <li><a href="#highlights">Highlights</a></li>
+        <li><a href="#skills">Skills</a></li>
         <li><a href="#education">Education</a></li>
         <li>
           <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Switch to light theme" title="Toggle light/dark theme">
@@ -89,8 +89,8 @@
         <h1 id="hero-name" class="hero__name">Tan Wei Jie <span class="hero__nick">(WJ)</span></h1>
         <p class="hero__title">Senior Site Reliability Engineer</p>
         <p class="hero__value">
-          I keep complex, cloud-scale systems reliable, observable, and quiet — turning noisy alerts
-          into trustworthy signals, and incidents into fixed root causes.
+          I keep cloud-scale systems reliable and observable — turning noisy alerts into
+          trustworthy signals, and incidents into fixed root causes.
         </p>
         <ul class="hero__meta" aria-label="Quick facts">
           <li>
@@ -134,15 +134,11 @@
         <h2 id="about-h" class="section__title"><span class="section__num">01.</span> About</h2>
         <div class="about">
           <p>
-            Seasoned Site Reliability / DevOps Engineer with 12+ years in IT. I have watched the industry
-            evolve from monolithic on-prem deployments to stateless microservices in the cloud, and the
-            shift from licensed software to SaaS — and I have engineered systems across that whole journey.
-          </p>
-          <p>
-            My focus is the reliability, availability, and scalability of complex systems: driving
-            research and proofs-of-concept that improve performance and stability, building robust CI/CD
-            pipelines, and optimizing operational processes. I thrive as a fast learner in dynamic
-            environments, and I care most about turning operational noise into trustworthy signal.
+            Seasoned Site Reliability / DevOps Engineer with 12+ years in IT — spanning the shift from
+            monolithic on-prem systems to cloud-native microservices, and from licensed software to SaaS.
+            I focus on the reliability, availability, and scalability of complex systems: research and
+            proofs-of-concept that improve performance and stability, robust CI/CD pipelines, and turning
+            operational noise into trustworthy signal.
           </p>
           <p class="about__direction">
             <strong>Where I'm heading:</strong> having progressed from SRE to Senior SRE, I'm growing toward
@@ -172,19 +168,21 @@
                 <p class="card__dates">Dec 2025 – Present</p>
               </header>
               <p class="card__sub">Site Reliability Engineer · Nov 2023 – Dec 2025 <span class="card__sub-note">(promoted to Senior SRE)</span></p>
+              <p class="card__milestone">
+                <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M6 4h12v3a6 6 0 0 1-12 0V4zM6 5H3v2a3 3 0 0 0 3 3M18 5h3v2a3 3 0 0 1-3 3M9 15h6M8 20h8M10 15v2a2 2 0 0 0 4 0v-2" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                <span><strong>Milestone</strong> &nbsp;Promoted to Senior SRE and recognized as the global SME for the Prometheus monitoring stack.</span>
+              </p>
               <ul class="bullets">
-                <li>Recognized as the <strong>global subject-matter expert for the Prometheus monitoring stack</strong> (Prometheus, Alertmanager, Grafana) on the SRE team.</li>
-                <li><strong>Led the migration of the alerting platform</strong> off a legacy metrics/analytics stack onto Prometheus; authored the migration guide and alarm-creation documentation adopted by the team.</li>
-                <li>Resolved high-impact alerting defects: eliminated duplicate alerts, fixed a bug causing new-server alerts to fire ~4 hours late, and built <strong>provisioning-aware alerts</strong> that correctly handle newly provisioned machines (team kudos).</li>
+                <li><strong>Global SME for the Prometheus monitoring stack</strong> (Prometheus, Alertmanager, Grafana), monitoring a large-scale platform that spans monolithic, high-availability, and split-application architectures.</li>
+                <li>Served as <strong>on-call incident lead</strong> — drove cross-team recovery with L3 (dev, DBA, platform) teams and championed customer-impact-first incident response.</li>
+                <li><strong>Led the migration of the alerting platform</strong> from a legacy metrics/analytics stack to Prometheus, and authored the migration and alarm-creation guides adopted team-wide.</li>
+                <li>Raised <strong>problem-management process adherence to 100% in Q3, up from 65%</strong> the prior quarter.</li>
                 <li>Helped define <strong>Critical User Journeys, SLIs and SLOs</strong>; co-built the main CUJ dashboard and delivered quarterly SLO reviews.</li>
-                <li>Improved problem-management process adherence to <strong>100% in Q3, up from 65%</strong> the prior quarter.</li>
-                <li><strong>Pioneered AI tooling for the SRE team</strong> — built a NotebookLM-based troubleshooting knowledge base and a Gemini-based assistant for weekly handover reports; trained the team and drove AI adoption beyond SRE.</li>
-                <li>Built an <strong>SLA uptime dashboard</strong> (Grafana + Superset + BigQuery), custom alert routes to notify the customer-success team for priority databases, and a maintenance-window view reconciled against Alertmanager silences.</li>
-                <li>Acted as <strong>on-call incident lead</strong> — coordinated cross-team recovery with L3 (dev, DBA, platform) teams and championed customer-impact-first incident response.</li>
-                <li>Secondary SME for registry &amp; reverse-proxy services; drove post-incident monitoring improvements, a deployment-review process, and new registry/login-page alarms.</li>
-                <li>Reduced alert noise and false positives by rewriting alarm rules and standardizing exclusion logic, cutting the number of silences required.</li>
-                <li>Operate and monitor a large-scale platform spanning <strong>multiple deployment architectures</strong> — monolithic, high-availability, and split-application models.</li>
-                <li>Drove <strong>capacity planning and cloud cost management</strong>, right-sizing infrastructure to keep services efficient and sustainable at scale.</li>
+                <li><strong>Pioneered AI tooling for the SRE team</strong> — a NotebookLM troubleshooting knowledge base and a Gemini weekly-handover assistant; trained the team and drove AI adoption beyond SRE.</li>
+                <li>Built an <strong>SLA uptime dashboard</strong> (Grafana + Superset + BigQuery) plus custom alert routes to notify the customer-success team for priority databases.</li>
+                <li>Improved detection reliability and cut false positives by eliminating duplicate alerts, rewriting alarm rules, and standardizing exclusion logic — reducing the silences required.</li>
+                <li><strong>Secondary SME for registry &amp; reverse-proxy</strong>; drove post-incident monitoring, a deployment-review process, and new registry/login-page alarms.</li>
+                <li>Drove <strong>capacity planning and cost management</strong>, right-sizing infrastructure to keep services efficient and sustainable at scale.</li>
               </ul>
               <ul class="tags" aria-label="Technologies">
                 <li>Prometheus</li><li>Alertmanager</li><li>Grafana</li><li>GCP</li><li>Kubernetes</li>
@@ -204,6 +202,10 @@
                 </div>
                 <p class="card__dates">Sept 2021 – 2023</p>
               </header>
+              <p class="card__milestone">
+                <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M6 4h12v3a6 6 0 0 1-12 0V4zM6 5H3v2a3 3 0 0 0 3 3M18 5h3v2a3 3 0 0 1-3 3M9 15h6M8 20h8M10 15v2a2 2 0 0 0 4 0v-2" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                <span><strong>Milestone</strong> &nbsp;Stood up a new production AWS account end to end — from VPC networking through EKS, MSK, and Redis.</span>
+              </p>
               <ul class="bullets">
                 <li>Owned monitoring and alarming for applications and middleware using Prometheus, Grafana, and CloudWatch; designed a centralized Alertmanager workflow.</li>
                 <li>Built centralized log analytics with Fluent Bit and AWS Elasticsearch/OpenSearch — authoring filters and index-state-management (ISM) policies — and a Lambda for cross-account logging.</li>
@@ -228,6 +230,10 @@
                 </div>
                 <p class="card__dates">Feb 2018 – Sept 2021</p>
               </header>
+              <p class="card__milestone">
+                <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M6 4h12v3a6 6 0 0 1-12 0V4zM6 5H3v2a3 3 0 0 0 3 3M18 5h3v2a3 3 0 0 1-3 3M9 15h6M8 20h8M10 15v2a2 2 0 0 0 4 0v-2" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                <span><strong>Milestone</strong> &nbsp;Delivered a Docker Swarm microservices platform with an HA-clustered Tyk API gateway across multiple client projects.</span>
+              </p>
               <ul class="bullets">
                 <li>Enhanced the core Ecquaria product and supported multiple client projects, researching and adopting new tools into the product framework.</li>
                 <li>Built per-project CI/CD pipelines (Jenkins, SonarQube, Nexus Repository) and deployed microservices on Docker Swarm.</li>
@@ -248,12 +254,16 @@
             <article class="card">
               <header class="card__head">
                 <div>
-                  <h3 class="card__role">Consultant → Senior Consultant</h3>
+                  <h3 class="card__role">Associate Consultant → Senior Consultant</h3>
                   <p class="card__org">NCS Pte Ltd · Singapore</p>
                 </div>
                 <p class="card__dates">2011 – Feb 2018</p>
               </header>
               <p class="card__sub">Progressed Associate Consultant → Consultant → Senior Consultant</p>
+              <p class="card__milestone">
+                <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M6 4h12v3a6 6 0 0 1-12 0V4zM6 5H3v2a3 3 0 0 0 3 3M18 5h3v2a3 3 0 0 1-3 3M9 15h6M8 20h8M10 15v2a2 2 0 0 0 4 0v-2" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                <span><strong>Milestone</strong> &nbsp;Lead developer for Singapore's SG50 birth-registration and birth-certificate national system.</span>
+              </p>
               <ul class="bullets">
                 <li>Team lead for the ICA technical-refresh programme (web + batch apps): upgraded WebLogic 8→10 and JDK 1.4→1.6, refreshed RSA servers, and migrated version control from Borland StarTeam to GitLab.</li>
                 <li>Lead developer for the SG50 birth-registration and birth-certificate implementation.</li>
@@ -269,10 +279,66 @@
       </div>
     </section>
 
+    <!-- ============ HIGHLIGHTS ============ -->
+    <section id="highlights" class="section reveal" aria-labelledby="hl-h">
+      <div class="container">
+        <h2 id="hl-h" class="section__title"><span class="section__num">03.</span> Key Achievements</h2>
+        <div class="highlights">
+          <article class="highlight">
+            <div class="highlight__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="24" height="24"><path d="M3 3v18h18M7 15l4-5 3 3 5-7" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <h3 class="highlight__title">Prometheus Global SME</h3>
+            <p>The team's go-to authority for the Prometheus / Alertmanager / Grafana stack — setting how alerts are designed, reviewed, and maintained.</p>
+          </article>
+
+          <article class="highlight">
+            <div class="highlight__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="24" height="24"><path d="M4 7h11M4 12h16M4 17h9M17 5l3 2-3 2M20 15l-3 2 3 2" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <h3 class="highlight__title">Alerting-Platform Migration</h3>
+            <p>Moved the team off a legacy metrics/analytics stack onto Prometheus and wrote the guides that made the new standard repeatable for everyone.</p>
+          </article>
+
+          <article class="highlight">
+            <div class="highlight__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="24" height="24"><path d="M12 3l2.5 5 5.5.8-4 3.9.9 5.5L12 15.5 7.1 18l.9-5.5-4-3.9L9.5 8z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <h3 class="highlight__title">AI-Tooling Pioneer</h3>
+            <p>First on the team to bring AI into daily SRE work — tools now used across the team, with adoption spreading beyond SRE.</p>
+          </article>
+
+          <article class="highlight">
+            <div class="highlight__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="24" height="24"><path d="M12 3a9 9 0 1 0 9 9M12 7v5l3 2M21 5l-3 3-2-2" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <h3 class="highlight__title">CUJ / SLO Program</h3>
+            <p>Turned raw metrics into customer-centric reliability targets the team now reviews every quarter.</p>
+          </article>
+
+          <article class="highlight">
+            <div class="highlight__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="24" height="24"><path d="M9 12l2 2 4-4M12 3l7 3v6c0 4-3 7-7 9-4-2-7-5-7-9V6z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <h3 class="highlight__title">SLA Uptime Visibility</h3>
+            <p>Built an SLA uptime dashboard (Grafana + Superset + BigQuery) and custom alert routes that notify the customer-success team for priority databases.</p>
+          </article>
+
+          <article class="highlight">
+            <div class="highlight__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="24" height="24"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <h3 class="highlight__title">100% Process Adherence</h3>
+            <p>Lifted problem-management adherence from 65% to 100% in a single quarter — measurable process discipline.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
     <!-- ============ SKILLS ============ -->
     <section id="skills" class="section reveal" aria-labelledby="skills-h">
       <div class="container">
-        <h2 id="skills-h" class="section__title"><span class="section__num">03.</span> Skills</h2>
+        <h2 id="skills-h" class="section__title"><span class="section__num">04.</span> Skills</h2>
         <div class="skills-grid">
           <article class="skill-group">
             <h3 class="skill-group__title">Observability &amp; Monitoring</h3>
@@ -341,62 +407,6 @@
       </div>
     </section>
 
-    <!-- ============ HIGHLIGHTS ============ -->
-    <section id="highlights" class="section reveal" aria-labelledby="hl-h">
-      <div class="container">
-        <h2 id="hl-h" class="section__title"><span class="section__num">04.</span> Key Achievements</h2>
-        <div class="highlights">
-          <article class="highlight">
-            <div class="highlight__icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" width="24" height="24"><path d="M3 3v18h18M7 15l4-5 3 3 5-7" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            </div>
-            <h3 class="highlight__title">Prometheus Global SME</h3>
-            <p>Became the recognized subject-matter expert for the Prometheus, Alertmanager, and Grafana stack across the global SRE team.</p>
-          </article>
-
-          <article class="highlight">
-            <div class="highlight__icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" width="24" height="24"><path d="M4 7h11M4 12h16M4 17h9M17 5l3 2-3 2M20 15l-3 2 3 2" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            </div>
-            <h3 class="highlight__title">Alerting-Platform Migration</h3>
-            <p>Led the move from a legacy metrics/analytics alerting stack to Prometheus, and authored the migration and alarm-creation guides used team-wide.</p>
-          </article>
-
-          <article class="highlight">
-            <div class="highlight__icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" width="24" height="24"><path d="M12 3l2.5 5 5.5.8-4 3.9.9 5.5L12 15.5 7.1 18l.9-5.5-4-3.9L9.5 8z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            </div>
-            <h3 class="highlight__title">AI-Tooling Pioneer</h3>
-            <p>Built a NotebookLM troubleshooting knowledge base and a Gemini handover-report assistant, trained the team, and drove AI adoption beyond SRE.</p>
-          </article>
-
-          <article class="highlight">
-            <div class="highlight__icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" width="24" height="24"><path d="M12 3a9 9 0 1 0 9 9M12 7v5l3 2M21 5l-3 3-2-2" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            </div>
-            <h3 class="highlight__title">CUJ / SLO Program</h3>
-            <p>Helped define Critical User Journeys, SLIs and SLOs, co-built the main CUJ dashboard, and delivered quarterly SLO reviews.</p>
-          </article>
-
-          <article class="highlight">
-            <div class="highlight__icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" width="24" height="24"><path d="M9 12l2 2 4-4M12 3l7 3v6c0 4-3 7-7 9-4-2-7-5-7-9V6z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            </div>
-            <h3 class="highlight__title">Alerting-Defect Fixes</h3>
-            <p>Eliminated duplicate alerts, fixed ~4-hour-late new-server alerts, and shipped provisioning-aware alerting that handles freshly provisioned machines.</p>
-          </article>
-
-          <article class="highlight">
-            <div class="highlight__icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" width="24" height="24"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            </div>
-            <h3 class="highlight__title">100% Process Adherence</h3>
-            <p>Raised problem-management process adherence to 100% in Q3, up from 65% the prior quarter, while cutting alert noise and required silences.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
     <!-- ============ EDUCATION + INTERESTS ============ -->
     <section id="education" class="section reveal" aria-labelledby="edu-h">
       <div class="container">
@@ -426,8 +436,8 @@
             <h3 class="edu-col__title">Interests</h3>
             <ul class="chips chips--interests">
               <li>
-                <svg class="icon" viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M8 21l3-9m0 0l2-6 4 4-3 2m-3 0l-3-1-3 3" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                Rock climbing
+                <svg class="icon" viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M2 12l20-7-7 20-3-9-10-4z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                Travelling
               </li>
               <li>
                 <svg class="icon" viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M4 18c2 0 2-1.5 4-1.5S10 18 12 18s2-1.5 4-1.5S18 18 20 18M12 3v9m0 0l3-3m-3 3L9 9" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
